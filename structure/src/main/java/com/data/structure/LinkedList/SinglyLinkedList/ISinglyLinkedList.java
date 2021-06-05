@@ -1,9 +1,8 @@
-package com.data.structure.LinkedList.DoublyLinkedList;
+package com.data.structure.LinkedList.SinglyLinkedList;
 
-interface IDoublyLinkedList<T> {
+interface ISinglyLinkedList<T> {
     int size = 0;
     Object head = null;
-    Object tail = null;
 
     public void clear();
 
@@ -27,11 +26,11 @@ interface IDoublyLinkedList<T> {
 
     T removeLast();
 
-    T removeAt(int index);
+    // T removeAt(int index);
 
-    boolean remove(Object obj);
+    // boolean remove(Object obj);
 
-    int indexOf(Object obj);
+    // int indexOf(Object obj);
 
-    public String toString();
+    // public String toString();
 }

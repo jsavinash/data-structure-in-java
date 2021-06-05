@@ -73,10 +73,14 @@ public class DoublyLinkedList<T> implements IDoublyLinkedList<T>, Iterable<T> {
     };
 
     public T peekFirst() {
+        if (isEmpty())
+            throw new RuntimeException("Empty list");
         return head.data;
     }
 
     public T peekLast() {
+        if (isEmpty())
+            throw new RuntimeException("Empty list");
         return tail.data;
     }
 
